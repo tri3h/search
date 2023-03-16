@@ -1,0 +1,51 @@
+$color-charteuse-30: rgb(149, 236, 0, 0.3)
+$color-charteuse: rgb(149, 236, 0)
+$color-sulu-30: rgb(196, 246, 111, 0.3)
+$color-sushi: #80B12C
+$color-olive-drab: #608522
+
+.search
+    margin-bottom: 10px
+    display: flex
+    gap: 10px
+    &__input
+        flex-grow: 10
+        border: 1px solid 
+        border-radius: 5px
+        padding: 5px
+    &__btn
+        flex-grow: 1
+        border-radius: 0px
+        border:1px solid $color-sushi
+        border-radius: 5px
+        background-color: $color-sulu-30
+        cursor: pointer
+        padding: 5px
+        &:hover, &:focus
+            background-color: $color-charteuse-30
+
+.no-results
+    font-size: 20px
+    font-weight: 700
+
+.results
+    list-style: none
+    padding: 0
+    & li:nth-child(even)
+        background-color: $color-sulu-30
+    & li:nth-child(odd)
+        background-color: $color-charteuse-30
+    
+.result
+    display: flex 
+    flex-direction: column 
+    gap: 2px
+    padding: 10px
+    &__link
+        color: $color-olive-drab
+        &:hover 
+            color: $color-charteuse
+            
+.error 
+    margin-bottom: 10px
+        
